@@ -1,0 +1,54 @@
+.App {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 70px;
+  background-color: #0d4c92;
+  display: flex;
+  align-items: center;
+  h2 {
+    margin: 20px;
+    color: #59c1bd;
+  }
+}
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 15px solid #3498db;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: #0d4c92;
+  color: #59c1bd;
+  text-align: center;
+  font-weight: 600;
+}

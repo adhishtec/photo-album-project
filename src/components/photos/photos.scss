@@ -1,0 +1,51 @@
+.main-layout {
+  background-color: #cff5e7;
+
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &__title {
+      color: #0d4c92;
+    }
+  }
+
+  .photos-container {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    cursor: pointer;
+
+    &__content {
+      padding: 10px;
+      flex: 0 0 30%;
+      background-color: #59c1bd;
+      border-radius: 2%;
+
+      .title {
+        padding: 5px;
+        height: 20%;
+        overflow: scroll;
+        color: #0d4c92;
+      }
+      img {
+        width: 100%;
+        height: 60%;
+      }
+    }
+  }
+
+  .pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    column-gap: 10px;
+    padding: 10px;
+  }
+  .number-of-photos {
+    color: seashell;
+    margin-right: 30px;
+  }
+}
